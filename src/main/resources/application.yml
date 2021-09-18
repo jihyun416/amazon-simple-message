@@ -1,0 +1,16 @@
+cloud:
+  aws:
+    credentials:
+      access-key: access-key
+      secret-key: secret-key
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false
+    sqs:
+      queue:
+        sqs-test-name: sqs-test
+        sqs-test-url: https://sqs.ap-northeast-2.amazonaws.com/[account-number]/sqs-test
+    sns:
+      topic:
+        sns-test-arn: arn:aws:sns:ap-northeast-2:[account-number]:sns-test
