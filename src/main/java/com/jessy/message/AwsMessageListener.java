@@ -12,7 +12,7 @@ import java.util.Map;
 @Component
 public class AwsMessageListener {
     @SqsListener(value = "${cloud.aws.sqs.queue.sqs-test-name}")
-    private void receiveDriverInfo(@Headers Map<String, String> header, @Payload String message) {
+    private void listenSqsTest(@Headers Map<String, String> header, @Payload String message) {
         log.info(message);
     }
 }
